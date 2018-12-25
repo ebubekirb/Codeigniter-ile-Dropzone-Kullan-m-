@@ -4,7 +4,7 @@ class Files extends CI_Controller{
 
 	public function index(){
 
-		echo "deneme";
+		$this->load->view("upload_view");
 	}
 
 	public function test(){
