@@ -12,7 +12,7 @@ class Files extends CI_Controller{
 	public function upload(){
 
 		// $config["allowed_types"] = "*";	-> Tüm dosyalar...
-		$config["allowed_types"] 	= "jpg|gif|png";
+		$config["allowed_types"] 	= "jpg|gif|png|jpeg";
 		$config["upload_path"] 		= "uploads/";
 
 		$this->load->library("upload", $config);
