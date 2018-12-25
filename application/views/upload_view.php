@@ -8,7 +8,12 @@
 	<link rel="stylesheet" href="<?php echo base_url("assets/custom.css") ?>">
 </head>
 <body>
-	<h1>Dropzone ile Çoklu Dosya Aktarımı</h1>
+	
+	<div class="container">
+		<h2 class="text-center">Dropzone ile Çoklu Dosya Aktarımı</h2>
+
+		<form action="<?php echo base_url("files/upload") ?>" class="dropzone" id="dropForm"></form>
+	</div>
 
 
 

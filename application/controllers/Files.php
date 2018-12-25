@@ -7,7 +7,7 @@ class Files extends CI_Controller{
 		$this->load->view("upload_view");
 	}
 
-	public function test(){
+	public function upload(){
 
 		echo "test";
 	}
