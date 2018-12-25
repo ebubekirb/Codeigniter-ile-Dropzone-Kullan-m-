@@ -11,8 +11,29 @@
 	
 	<div class="container">
 		<h2 class="text-center">Dropzone ile Çoklu Dosya Aktarımı</h2>
-
 		<form action="<?php echo base_url("files/upload") ?>" class="dropzone" id="dropForm"></form>
+		<hr>
+		<h3>Kayıtlı Resimler</h3>
+		<table class="table table-bordered table-striped table-hover">
+			<thead>
+				<th>Önizleme</th>
+				<th>Dosya Adı</th>
+			</thead>
+			<tbody>
+				<?php foreach($images as $image) { ?>
+
+				<tr>
+					<td>
+						<img src="<?php echo $image->file_url; ?>" alt="">
+					</td>
+					<td>
+						<p><?php echo $image->file_name; ?></p>
+					</td>
+				</tr>
+
+				<?php } ?>
+			</tbody>
+		</table>
 	</div>
 
 

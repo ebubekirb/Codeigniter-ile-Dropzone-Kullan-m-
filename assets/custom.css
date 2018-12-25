@@ -1,0 +1,10 @@
+tr td:first-child{
+
+	width: 100px;
+}
+
+td img{
+
+	width: 100px;
+	height: 50px;
+}

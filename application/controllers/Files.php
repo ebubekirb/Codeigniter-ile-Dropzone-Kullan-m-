@@ -4,7 +4,9 @@ class Files extends CI_Controller{
 
 	public function index(){
 
-		$this->load->view("upload_view");
+		$viewData["images"] = $this->db->get("files")->result();
+
+		$this->load->view("upload_view", $viewData);
 	}
 
 	public function upload(){
